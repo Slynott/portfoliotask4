@@ -18,7 +18,7 @@ string IntToString(int);
 
 int main(int argc, char *argv[])
 {
-    string sensorData = "<reading><time>10:00</time><temperature>30</temperature></reading>";
+    string sensorData = "<reading><time>10:00</time><temperature>40</temperature></reading>";
     string request;
     string response;
     int resp_leng;
