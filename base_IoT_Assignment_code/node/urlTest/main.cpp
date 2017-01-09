@@ -27,6 +27,11 @@ int main(int argc, char *argv[])
     struct sockaddr_in serveraddr;
     int sock;
 
+    int data[10]= {10,15,20,25,30,35,40,45,50,55};
+    for(int i=0; i<10; i++)
+        cout << "reading" << data[i]<< endl;
+    string sensorData= "<reading><time>11.00</time><temperature>41</temperature></reading>";
+
     WSADATA wsaData;
     char *ipaddress = "127.0.0.1";
     int port = 8080;
